@@ -1,0 +1,128 @@
+/* css footer */
+.poochfooter .footer-home {
+    background: #111;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  
+  .poochfooter h6.footer-title-home {
+    color: #fff;
+    line-height: 26px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 25px;
+  }
+  
+  .poochfooter .footer-home ul li {
+    list-style: none;
+    margin-bottom: 5px;
+  }
+  
+  .poochfooter .footer-home ul li p, .poochfooter .footer-home ul li a {
+    font-weight: normal;
+    font-size: 16px;
+    color: #696969;
+    line-height: 28px;
+  }
+  
+  a {
+    text-decoration: none;
+    transition: all 0.5s;
+  }
+  
+  .poochfooter ul.social-icons {
+    padding: 0;
+    margin-top: 3px;
+    list-style: none;
+    overflow: hidden;
+  }
+  
+  .poochfooter ul.social-icons li {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 0;
+  }
+  
+  .poochfooter ul.social-icons li a {
+    text-decoration: none;
+    display: block;
+  }
+  
+  .poochfooter ul.social-icons li a span {
+    font-size: 16px;
+    color: #696969;
+  }
+  
+  .poochfooter ul.social-icons li a span:hover {
+    color: #fff;
+    transition: 0.3s ease-in;
+  }
+  
+  .poochfooter ul li a:hover {
+    text-decoration: underline;
+    color: #fff;
+  }
+  
+  .poochfooter .copy-footer {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #696969;
+    margin-bottom: 0;
+  }
+  
+  .poochfooter .copy-footer a {
+    color: #f53626;
+    opacity: 0.9;
+  }
+  
+  .poochfooter .copy-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom-home {
+    background: #111;
+    border-top: 1px solid rgba(103, 99, 99, 0.14);
+  }
+  /* css footer end*/
+  
+  
+  /* backtotop css */
+  .poochfooter #movetop {
+   display: none;
+   position: fixed;
+   bottom: 60px;
+   right: 15px;
+   z-index: 99;
+   font-size: 18px;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   color: #fff;
+   width: 48px;
+   height: 48px;
+   padding: 0;
+   line-height: 48px;
+   text-align: center;
+   border-radius: 50%;
+   background: #189A46;
+   transition: 0.3s ease-out;
+  }
+  
+  .poochfooter #movetop:hover {
+    transform: translate3d(0, -5px, 0);
+    transition: 0.3s ease-out;
+  }
+  
+  .poochfooter #movetop span {
+    font-size: 13px;
+    font-style: normal;
+  }
+
+  
+  /* backtotop css end*/

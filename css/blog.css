@@ -1,0 +1,177 @@
+.Blog {
+    margin-top: 90px;
+    background-image: url(../img/banner4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    display: grid;
+    align-items: center;
+    padding: 1em 0;
+    text-align: center;
+}
+.Blog::before {
+    content: "";
+    position: absolute;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #0c0c0c;
+    opacity: 0.6;
+}
+.Blog .bg_z .Blog_content{
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+.Blog .bg_z .Blog_content h2{
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+}
+.Blog .bg_z .Blog_content p{
+    vertical-align: middle;
+    font-size: 1.2em;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #189A46;
+}
+.Post{
+    background-color: rgb(147 107 232 / 5%);
+}
+.Post .Post_title{
+    text-align: center;
+    padding-top: 3rem;
+}
+.Post .Post_title p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 2em;
+    letter-spacing: 1px;
+    color: #f53626;
+}
+.Post .Post_title h2{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    margin-bottom: 3rem;
+}
+.Post .Post_item {
+    margin-bottom: 40px;
+}
+.Post .Post_item img{
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+.Post .Post_item .title{
+    background: #fff;
+    padding: 30px 20px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 25px 98px 0 rgba(19, 19, 19, 0.03);
+}
+.Post .Post_item .title a h3{
+    font-size: 26px;
+    line-height: 34px;
+    font-weight: 600;
+    color: #000c04;
+    margin-bottom: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.Post .Post_item p{
+    font-size: 1rem;
+    color: #999;
+    line-height: 1.5;
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+}
+.Post .Post_item p span{
+    color: #000c04;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+.Post .page{
+    padding-bottom: 3rem;
+}
+.Post .page a{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 5px;
+    color: #000c04;
+}
+.Post .Post_item{
+    transform: translateY(0);
+    transition: 0.3s;
+}
+.Post .Post_item:hover{
+    transform: translateY(-0.5rem);
+    transition: 0.3s;
+}
+.Post .Post_item .title h3:hover{
+    color: #189A46;
+    transition: 0.3s;
+}
+.Post .Post_item .title span:hover{
+    color: red;
+    transition: .3s;
+    cursor: pointer;
+}
+.dark .Post{
+    background-color: #222222;
+}
+.dark .Post .Post_title h2{
+    color: white;
+}
+.dark .Post .Post_item .title{
+    background-color: #151515;
+}
+.dark .Post .Post_item .title a h3{
+    color: white;
+}
+.dark .Post .Post_item .title h3:hover{
+    color: #189A46;
+}
+.dark .Post .Post_item p span{
+    color: white;
+}
+.dark .Post .page a{
+    color: white;
+}
+.Post .page a:hover{
+    color: #189A46;
+}
+.dark .Post .page a:hover{
+    color: #189A46;
+}
+  /* responsive */
+/* >lap */
+@media screen and (min-width: 1200px){
+
+
+
+
+}
+/* lap */
+@media screen and (max-width: 1200px){
+
+}
+/* tap */
+@media screen and (max-width: 992px){
+    .Post .Post_title h2{
+        font-size: 35px;
+        line-height: 40px;
+    }
+}
+/* mobile */
+@media screen and (max-width: 576px){
+    .Post .Post_title h2{
+        font-size: 32px;
+        line-height: 38px;
+    }
+}

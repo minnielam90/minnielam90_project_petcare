@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Poochcare</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- GOOGLE FONT JOST -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+    <!-- gg icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/css.gg@2.0.0/icons/all.min.css"
+    />
+
+    <!-- owl carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="./../css/blog.css">
+    <link rel="stylesheet" href="./../css/blog_1.css">
+  </head>
+
+  <body id="myBody">
+    <!-- header -->
+    <header id="site-header" class="main-header fixed-top">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg stroke">
+          <h1>
+            <a class="navbar-brand" href="#">Pooch Care</a>
+          </h1>
+
+          <button
+            class="navbar-toggler collapsed bg-gradient"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-content"
+            aria-controls="navbar-content"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+            <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbar-content">
+            <ul id="primary-menu" class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/aboutus.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/gallery.html">Gallery</a>
+              </li>
+
+              <li class="nav-item dropdown menu-item-has-children">
+                <a
+                  class="nav-link active dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <ul class="sub-menu dropdown-menu">
+                  <li><a class="dropdown-item" href="../pages/blog_page1.html">Blog Posts</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Landing Page</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contact.html">Contact</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav search-right mt-lg-0 mt-2">
+              <li id="search-menu" class="nav-item HeaderSearch" title="Search">
+                <a href="#search" class="btn search-search" title="search" onclick="openSearch()">
+                  <span id="search-icon" class="fa fa-search" aria-hidden="true"></span>
+                </a>
+                <!-- search popup -->
+                <div id="myOverlay" class="pop-overlay">
+                  
+                  <div class="search-popup">
+                    <form action="#url" method="get" class="d-sm-flex">
+                      <input
+                        id="inputSearch"
+                        type="text"
+                        name="s"
+                        placeholder="Search.."
+                        required="required"
+                        autofocus=""
+                      />
+                      <button type="submit">Search</button>
+                      <span class="header__closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
+                    </form>
+                  </div>
+                </div>
+                <!-- search popup -->
+              </li>
+            </ul>
+          </div>
+
+          <!-- darkandlight theme -->
+          <div class="mobile-position darkandlight">
+            <nav class="navigation">
+              <div class="theme-switch-wrapper">
+                <div class="theme-switch">
+                  <button
+                    class="mode-container"
+                    id="switchButton"
+                    title="Click to switch theme"
+                  >
+                    <i class="gg-sun"></i>
+                    <i class="gg-moon"></i>
+                  </button>
+                </label>
+              </div>
+            </nav>
+          </div>
+
+          
+        </nav>
+      </div>
+    </header>
+    <div class="header-fixed-space-height"></div>
+
+    <!-- blog -->
+    <section class="Blog">
+        <div class="bg_z">
+            <div class="container">
+                <div class="Blog_content">
+                    <h2>Blog single post</h2>
+                    <a href="../index.html"><p>Home</p></a>
+                </div>
+        
+            </div>
+        </div>
+    </section>
+
+    <!-- post -->
+    <section class="Pet">
+        <div class="container">
+            <div class="Pet_content">
+                <div class="Pet_top">
+                    <a href="">Pets</a>
+                    <h2>Delivering Happiness For Pets</h2>
+                    <div class="date">
+                        <i class="fa-regular fa-clock fa-flip-horizontal"></i> December 30, 2020
+                        <i class="fa-solid fa-user"></i> by <span>W3Layouts</span>
+                    </div>
+                </div>
+                <div class="Pet_center">
+                    <img src="./../img/g7.jpg" alt="">
+                </div>
+                <div class="Pet_bot">
+                    <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit</p>
+                    <div class="Prev_Next">
+                        <div class="Prev">
+                            <a href="./blog_6.html">
+                                <p>
+                                    <i class="fa-solid fa-angles-left"></i> Prev Post
+                                </p>
+                                <h3>Delivering happiness for Pets</h3>
+                            </a>
+                        </div>
+                        <div class="Next">
+                            <a href="./blog_8.html">
+                                <p>
+                                    Next Post <i class="fa-solid fa-angles-left fa-rotate-180"></i>
+                                </p>
+                                <h3>Delivering happiness for Pets</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="Reply">
+                        <h2>Leave a Reply</h2>
+                        <p>Your email address will not be published. Required fields are marked *</p>
+                        <div class="mb-3">
+                          <label for="" class="form-label">Comment *</label>
+                          <textarea class="form-control Comment" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Name *</label>
+                            <input type="text" name="" id="" class="form-control demo" placeholder="" aria-describedby="helpId">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Email *</label>
+                            <input type="text" name="" id="" class="form-control demo" placeholder="" aria-describedby="helpId">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Website</label>
+                            <input type="text" name="" id="" class="form-control demo" placeholder="" aria-describedby="helpId">
+                        </div>
+                    </div>
+                    <div class="bot_bot">
+                        <h3>Save my name, email, and website in this browser for the next time I comment.</h3>
+                        <div class="bot_r">
+                            <button class="Post_comment">Post Comment</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section class="poochfooter">
+      <footer class="footer-home">
+        <div class="footer-bg-layer">
+          <div class="container py-lg-3 PoochCareFooter">
+            <div class="row footer-top-home">
+              <div class="col-lg-6 col-md-5 footer-list-home mt-5">
+                <h6 class="footer-title-home">Contact information</h6>
+                <ul class="px-0">
+                  <li>
+                    <p>
+                      <strong>Address</strong>
+                      : #135 block, Barnard St. Brooklyn, London 10036, UK
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>Phone</strong>
+                      :
+                      <a href="tel:+(12)234-11-24">+(12)234-11-24</a>
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>Email</strong>
+                      :
+                      <a href="mailto:example@mail.com">example@mail.com</a>
+                    </p>
+                  </li>
+                </ul>
+                <div class="main-social-footer-home mt-3 FooterSocial">
+                  <ul class="social-icons">
+                    <li class="facebook">
+                      <a href="https://www.facebook.com/w3layouts/" title="Facebook">
+                        <span
+                          class="fa-brands fa-facebook-f"
+                          aria-hidden="true"
+                        ></span>
+                      </a>
+                    </li>
+                    <li class="facebook">
+                      <a href="https://twitter.com/W3layouts" title="Twitter">
+                        <span
+                          class="fa-brands fa-twitter"
+                          aria-hidden="true"
+                        ></span>
+                      </a>
+                    </li>
+                    <li class="facebook">
+                      <a href="https://dribbble.com/w3layouts" title="Dribbble">
+                        <span
+                          class="fa-brands fa-dribbble"
+                          aria-hidden="true"
+                        ></span>
+                      </a>
+                    </li>
+                    <li class="facebook">
+                      <a href="https://myaccount.google.com/intro/profile" title="Google">
+                        <span
+                          class="fa-brands fa-google"
+                          aria-hidden="true"
+                        ></span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-7">
+                <div class="row">
+                  <div class="col-sm-4 col-6 footer-list-home mt-5">
+                    <div id="archives-home" class="widget_archive">
+                      <h6 class="footer-title-home">Archives</h6>
+                      <ul class="px-0">
+                        <li>
+                          <a href="#">December</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-6 footer-list-home mt-5">
+                    <div id="categories-home" class="widget_catergories">
+                      <h6 class="footer-title-home">Categories</h6>
+                      <ul class="px-0">
+                        <li class="cat-item">
+                          <a href="#">Animal</a>
+                        </li>
+                        <li class="cat-item">
+                          <a href="#">Pets</a>
+                        </li>
+                        <li class="cat-item">
+                          <a href="#">Pets care</a>
+                        </li>
+                        <li class="cat-item">
+                          <a href="#">Uncategorized</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-6 footer-list-home mt-5">
+                    <div id="meta-home" class="widget_meta">
+                      <h6 class="footer-title-home">Meta</h6>
+                      <ul class="px-0">
+                        <li class="meta-item">
+                          <a href="#">Log in</a>
+                        </li>
+                        <li class="meta-item">
+                          <a href="#">Entries feed</a>
+                        </li>
+                        <li class="meta-item">
+                          <a href="#">Comments feed</a>
+                        </li>
+                        <li class="meta-item">
+                          <a href="#">WordPress.org</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- copyright -->
+          <div class="footer-bottom-home align-items-center py-lg-4 py-3 mt-5">
+            <div class="container copyrights">
+              <p class="copy-footer text-center">
+                © 2023 All Rights Reserved by
+                <a href="https://w3layouts.com/">W3Layouts.</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- back to top -->
+      <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fa fa-angle-up"></span>
+      </button>
+    </section>
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- menu js -->
+    <script>
+      $(window).on("scroll", function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 80) {
+          $("#site-header").addClass("nav-fixed");
+        } else {
+          $("#site-header").removeClass("nav-fixed");
+        }
+      });
+
+      //Main navigation Active Class Add Remove
+      $(".navbar-toggler").on("click", function () {
+        $("header").toggleClass("active");
+      });
+      $(document).on("ready", function () {
+        if ($(window).width() > 991) {
+          $("header").removeClass("active");
+        }
+        $(window).on("resize", function () {
+          if ($(window).width() > 991) {
+            $("header").removeClass("active");
+          }
+        });
+      });
+    </script>
+
+    <!-- disable body scroll when navbar is active -->
+        <script>
+          $(function () {
+            $('.navbar-toggler').click(function () {
+              $('body').toggleClass('noscroll');
+            })
+          });
+        </script>
+
+    <!-- search pop up -->
+          <script>
+            function openSearch() {
+                document.getElementById("myOverlay").style.display = "block";
+            }
+    
+            function closeSearch() {
+                document.getElementById("myOverlay").style.display = "none";
+            }
+        </script>
+
+
+    <!-- DARK AND LIGHT THEME -->
+    <script>
+      document.getElementById("switchButton").onclick = function () {
+        document.getElementById("myBody").classList.toggle("dark");
+      };
+    </script>
+
+    <!-- gg icons -->
+    <script src="https://cdn.jsdelivr.net/npm/css.gg@2.1.1/index.min.js"></script>
+
+    <!-- owl carousel -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 0,
+          nav: false,
+          responsiveClass: true,
+          autoplay: true,
+          autoplayTimeout: 5000,
+          autoplaySpeed: 1000,
+          autoplayHoverPause: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            480: {
+              items: 1,
+            },
+            667: {
+              items: 1,
+            },
+            1000: {
+              items: 1,
+            },
+          },
+        });
+      });
+    </script>
+
+    <!-- back to top -->
+    <script>
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction()
+      };
+    
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("movetop").style.display = "block";
+        } else {
+          document.getElementById("movetop").style.display = "none";
+        }
+      }
+    
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+
+    <!-- popup -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+  <script>
+$('.video_center_play').magnificPopup({
+  type: 'iframe',
+  
+  
+  iframe: {
+     markup: '<div class="mfp-iframe-scaler">'+
+                '<div class="mfp-close"></div>'+
+                '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+                '<div class="mfp-title">Some caption</div>'+
+              '</div>'
+  },
+  callbacks: {
+    markupParse: function(template, values, item) {
+     values.title = item.el.attr('title');
+    }
+  }
+  
+  
+});
+  </script>
+
+    <!-- Number counter -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="../js/jquery.countup.js"></script>
+    <script>
+        $(".counter").countUp();
+    </script>
+
+
+  </body>
+</html>
